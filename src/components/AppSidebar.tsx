@@ -31,7 +31,7 @@ const AppSidebar = () => {
     >
       <SidebarHeader>
         <SidebarMenu>
-          <SidebarMenuItem>
+          <SidebarMenuItem className="px-0.5 max-lg:p-2">
             <Logo variant={isMobile ? 'default' : 'icon'} />
           </SidebarMenuItem>
         </SidebarMenu>

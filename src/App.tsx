@@ -4,6 +4,8 @@ import AppSidebar from './components/AppSidebar.tsx';
 import Header from './components/Header.tsx';
 import { Page, PageHeader } from './components/Page.tsx';
 import { DashboardCard } from './components/DashboardCard.tsx';
+import { AppBarChart } from './components/AppBarChart.tsx';
+import { AppRadialChart } from './components/AppRadialChart.tsx';
 
 const App = () => {
   return (
@@ -15,12 +17,20 @@ const App = () => {
           <main>
             <Page>
               <PageHeader />
-
-              <div className="">
-                <DashboardCard title='Vendor breakdown'
-                description='Keep track of vendors and their security ratings.'
-                buttonText='View full report'>
-
+              <div className="grid gap-4 lg:grid-cols-2">
+                <DashboardCard
+                  title="Vendor breakdown"
+                  description="Keep track of vendors and their security ratings."
+                  buttonText="View full report"
+                >
+                  <AppBarChart />
+                </DashboardCard>
+                <DashboardCard
+                  title="Vendor monitored"
+                  description="You're using 80% of available spots."
+                  buttonText="Upgrade plan"
+                >
+                  <AppRadialChart />
                 </DashboardCard>
               </div>
             </Page>

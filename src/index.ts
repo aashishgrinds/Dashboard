@@ -15,7 +15,6 @@ import {
   UsersIcon,
 } from 'lucide-react';
 
-
 //import type { Vendor } from '@/components/Columns';
 
 export const VENDOR_BREAKDOWN = [
@@ -34,6 +33,8 @@ export const VENDOR_BREAKDOWN = [
 ];
 
 export const VENDOR_MONITORED = [{ year: '2025', monitored: 240, limit: 60 }];
+
+export { AppRadialChart } from './components/AppRadialChart';
 
 export const APP_SIDEBAR = {
   primaryNav: [

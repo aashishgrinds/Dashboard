@@ -59,7 +59,7 @@ export const UserMenu = () => {
           Switch account
         </DropdownMenuLabel>
         
-        <DropdownMenuRadioGroup
+        <DropdownMenuRadioGroupz
           value={selectedEmail}
           onValueChange={setSelectedEmail}
         >
